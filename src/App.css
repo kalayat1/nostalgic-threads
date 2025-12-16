@@ -32,7 +32,7 @@ body {
 .navbar a {
   text-decoration: none;
   color: #333;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1.4rem;
   letter-spacing: 0.04em;
 }
@@ -145,35 +145,6 @@ body {
   background-position: center;
 }
 
-/* Donation Guidelines */
-.donate-guidelines {
-  padding: 4rem;
-  text-align: center;
-}
-
-.guidelines-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
-.guideline-item {
-  padding: 2rem;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-}
-
-.guideline-item h3 {
-  margin-top: 1rem;
-}
-
-.guideline-item .icon {
-  font-size: 2.5rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
 /* Responsive */
 @media (max-width: 900px) {
   .donate-hero,
@@ -243,6 +214,7 @@ body {
 .impact-card {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 1.2rem;
 }
 
@@ -262,4 +234,147 @@ body {
   line-height: 1.72;
   max-width: 320px;
   margin: 0 auto;
+}
+
+/* DONATION PROCESS */
+.donation-process {
+  padding: 6rem 2rem;
+  background-color: #fafafa;
+  text-align: center;
+}
+
+.donation-process h2 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.process-card {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.process-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #fde6c8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  color: #f28c28;
+}
+
+.process-step {
+  color: #f28c28;
+  font-size: 0.85rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.process-card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.process-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+
+@media (max-width: 1000px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ACCEPTANCE SECTION */
+.acceptance-section {
+  padding: 5rem 2rem 6rem;
+}
+
+.acceptance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.acceptance-card {
+  background: white;
+  min-height: 340px;
+  border-radius: 14px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+}
+
+.acceptance-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.acceptance-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.acceptance-card li {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.6rem;
+}
+
+.accept-icon {
+  color: #22c55e;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.reject-icon {
+  color: #ef4444;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.accept-title-icon {
+  color: #22c55e;
+  font-size: 1.4rem;
+}
+
+.reject-title-icon {
+  color: #ef4444;
+  font-size: 1.4rem;
 }
