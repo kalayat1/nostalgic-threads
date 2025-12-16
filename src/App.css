@@ -4,7 +4,7 @@ body {
   color: #333;
 }
 
-/* NAVBAR */
+/* ================= NAVBAR ================= */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -41,75 +41,7 @@ body {
   color: #d97706;
 }
 
-/* HERO */
-.hero {
-  height: 80vh;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-}
-
-.hero-content {
-  background: rgba(0,0,0,0.55);
-  color: white;
-  padding: 40px;
-  max-width: 500px;
-  margin-left: 60px;
-  border-radius: 8px;
-}
-
-.hero-buttons {
-  margin-top: 20px;
-  display: flex;
-  gap: 15px;
-}
-
-.primary {
-  background: #d97706;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.secondary {
-  background: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-/* SECTIONS */
-.section {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.section h2 {
-  margin-bottom: 15px;
-}
-.cards {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 40px;
-}
-
-.card {
-  background: white;
-  padding: 30px;
-  width: 300px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-/* Donate Hero */
+/* ================= DONATE HERO ================= */
 .donate-hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,53 +77,32 @@ body {
   background-position: center;
 }
 
-/* Responsive */
-@media (max-width: 900px) {
-  .donate-hero,
-  .donate-impact {
-    grid-template-columns: 1fr;
-  }
-
-  .donate-hero {
-    min-height: auto;
-  }
-
-  .donate-hero-image {
-    height: 300px;
-  }
-}
-
+/* CTA BUTTON */
 .donate-cta {
   margin-top: 2.5rem;
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
-
   width: fit-content;
-  max-width: fit-content;
-
   background-color: white;
   color: #f28c28;
-
   padding: 1rem 2.8rem;
-
   font-family: "Archivo Black", sans-serif;
   font-size: 0.95rem;
-  font-weight: 400;
-
   letter-spacing: 0.16em;
   text-transform: uppercase;
-
   text-decoration: none;
   border-radius: 3px;
+  transition: all 0.25s ease;
 }
 
 .donate-cta:hover {
-  background-color: #1f1e1d48;
+  background-color: #f28c28;
   color: white;
+  box-shadow: inset 0 0 0 2px white;
 }
 
+/* ================= IMPACT SECTION ================= */
 .donate-impact {
   padding: 5rem 2rem;
   text-align: center;
@@ -220,23 +131,20 @@ body {
 
 .impact-icon {
   font-size: 3rem;
-  margin-bottom: 1.5rem;
   color: #f28c28;
 }
 
 .impact-card h3 {
   font-size: 1.4rem;
-  margin-bottom: 0.8rem;
 }
 
 .impact-card p {
   font-size: 1.3rem;
   line-height: 1.72;
   max-width: 320px;
-  margin: 0 auto;
 }
 
-/* DONATION PROCESS */
+/* ================= DONATION PROCESS ================= */
 .donation-process {
   padding: 6rem 2rem;
   background-color: #fafafa;
@@ -290,7 +198,6 @@ body {
 
 .process-card h3 {
   font-size: 1.3rem;
-  margin: 0.5rem 0;
 }
 
 .process-card p {
@@ -299,20 +206,7 @@ body {
   color: #555;
 }
 
-
-@media (max-width: 1000px) {
-  .process-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .process-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ACCEPTANCE SECTION */
+/* ================= ACCEPT / REJECT ================= */
 .acceptance-section {
   padding: 5rem 2rem 6rem;
 }
@@ -360,21 +254,113 @@ body {
 .accept-icon {
   color: #22c55e;
   font-size: 1.2rem;
-  flex-shrink: 0;
 }
 
 .reject-icon {
   color: #ef4444;
   font-size: 1.2rem;
-  flex-shrink: 0;
 }
 
-.accept-title-icon {
-  color: #22c55e;
+/* ================= CONTACT PAGE ================= */
+.contact-page {
+  background-color: #f28c28;
+  padding: 4.5rem 2rem;
+}
+
+.contact-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.contact-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.8rem 3rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+.contact-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.contact-icon {
+  color: #f28c28;
   font-size: 1.4rem;
 }
 
-.reject-title-icon {
-  color: #ef4444;
-  font-size: 1.4rem;
+/* ================= STORE HOURS ================= */
+.hours-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hours-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  font-size: 1.05rem;
+  border-bottom: 1px solid #eee;
+}
+
+.hours-list li:last-child {
+  border-bottom: none;
+}
+
+.dropoff-note {
+  margin-top: 2rem;
+  padding: 1rem 1.2rem;
+  background-color: #fff4e6;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #7a4a00;
+}
+
+/* ================= MAP ================= */
+.map-embed {
+  margin-top: 1.8rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.map-embed iframe {
+  width: 100%;
+  height: 260px;
+  border: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1000px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .donate-hero,
+  .impact-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-hero-image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
 }

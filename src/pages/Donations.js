@@ -22,7 +22,7 @@ function Donations() {
             waste.
           </p>
 
-          <Link to="/visit" className="donate-cta">
+          <Link to="/contact" className="donate-cta">
             Find a Store
           </Link>
         </div>
