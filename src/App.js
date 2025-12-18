@@ -3,8 +3,9 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Donations from "./pages/Donations";
-import Visit from "./pages/Visit";
 import Contact from "./pages/Contact";
+import Footer from "./components/Footer";
+
 import "./App.css";
 
 function App() {
@@ -16,9 +17,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/donations" element={<Donations />} />
-        <Route path="/visit" element={<Visit />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+          <Footer />  {/* <-- Add footer here */}
     </>
   );
 }
