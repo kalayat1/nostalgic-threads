@@ -38,8 +38,10 @@ This project was completed as part of a college course and developed collaborati
 ---
 
 ## ▶️ Running the Project Locally
-To run the project on your machine:
+Clone the repository and install dependencies:
 
 ```bash
+git clone https://github.com/kalayat1/nostalgic-threads.git
+cd nostalgic-threads
 npm install
 npm start
